@@ -9,7 +9,8 @@ pipeline {
                 script {
                     gitCheckout(
                         branch : "main",
-                        url: "https://github.com/Ramlu/mr-devops-java-app.git"
+                        url: "https://github.com/Ramlu/mr-devops-java-app.git",
+                        credentialsId: 'github-token'
                     )
                 }
             }
